@@ -1,0 +1,1 @@
+Just fill in accounts.txt and run Scheduled.js

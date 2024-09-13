@@ -1,0 +1,30 @@
+{
+  "name": "veek",
+  "version": "7.1.2",
+  "private": true,
+  "type": "module",
+  "repository": "https://github.com/AllysonGustavo1/Veek-mae.git",
+  "author": "Allyson Gustavo",
+  "license": "MIT",
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "semantic-release": "^21.0.7"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      "@semantic-release/git",
+      "@semantic-release/changelog"
+    ]
+  },
+  "dependencies": {
+    "veek": "file:"
+  }
+}
