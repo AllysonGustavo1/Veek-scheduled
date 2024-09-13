@@ -3,7 +3,7 @@
   "version": "7.1.2",
   "private": true,
   "type": "module",
-  "repository": "https://github.com/AllysonGustavo1/Veek-mae.git",
+  "repository": "https://github.com/AllysonGustavo1/Veek-scheduled.git",
   "author": "Allyson Gustavo",
   "license": "MIT",
   "devDependencies": {
