@@ -1,0 +1,26 @@
+name: Veek Scheduled Check-in
+
+on:
+  schedule:
+    # Executa a cada 30 minutos
+    - cron: '*/30 * * * *'
+  workflow_dispatch: # Permite disparar manualmente pela aba Actions do GitHub
+
+jobs:
+  checkin:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Executar script de check-in
+        env:
+          ACCOUNTS: ${{ secrets.ACCOUNTS || secrets.accounts }}
+          accounts: ${{ secrets.accounts || secrets.ACCOUNTS }}
+        run: node index.js

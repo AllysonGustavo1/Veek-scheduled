@@ -1,0 +1,8 @@
+# Exemplo de arquivo accounts.txt
+# Formatos suportados:
+# Conta:senha (ou CPF:senha)
+# Nome:CPF:senha
+# Nome:CPF:senha:NCheckins
+
+nome:cpf:senha:NCheckins
+Exemplo:12345678901:MinhaSenha123:0

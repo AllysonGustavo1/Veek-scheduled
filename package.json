@@ -24,7 +24,7 @@
       "@semantic-release/changelog"
     ]
   },
-  "dependencies": {
-    "veek": "file:"
+  "scripts": {
+    "start": "node index.js"
   }
 }
