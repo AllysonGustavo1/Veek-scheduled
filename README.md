@@ -11,13 +11,13 @@ Script automatizado para realizar check-in e resgatar recompensas/bônus na oper
 2. Acesse **Settings** > **Secrets and variables** > **Actions**.
 3. Clique em **New repository secret**.
 4. Em **Name**, digite: `accounts` (ou `ACCOUNTS`).
-5. Em **Secret**, cole as suas contas uma por linha:
+5. Em **Secret**, cole as suas contas no formato `nome:cpf:senha:ncheckins`:
    ```text
-   Conta:senha
-   Conta:senha
-   Conta:senha
+   nome:cpf:senha:ncheckins
+   Eu:00000000000:MinhaSenha123:0
+   OutroUsuario:12345678900:OutraSenha:0
    ```
-   > **Nota:** Também são suportados os formatos com nome (`Nome:CPF:senha`) e com contagem de check-ins (`Nome:CPF:senha:NCheckins`). O cabeçalho inicial é opcional.
+   > **Nota:** O cabeçalho `nome:cpf:senha:ncheckins` na primeira linha é opcional.
 
 6. Clique em **Add secret**.
 
@@ -36,14 +36,14 @@ Caso queira rodar na sua máquina:
 
 1. Crie um arquivo `accounts.txt` com suas credenciais (veja o modelo em `accounts.example.txt`):
    ```text
-   nome:cpf:senha:NCheckins
+   nome:cpf:senha:ncheckins
    MinhaConta:12345678901:MinhaSenha:0
    ```
-2. Instale e execute:
+2. Execute o script:
    ```bash
    node index.js
    ```
-   ou para rodar com intervalo em segundo plano:
+   ou para rodar com agendamento contínuo em segundo plano:
    ```bash
    node scheduled.js
    ```
