@@ -14,8 +14,8 @@ Script automatizado para realizar check-in e resgatar recompensas/bônus na oper
 5. Em **Secret**, cole as suas contas no formato `nome:cpf:senha:ncheckins`:
    ```text
    nome:cpf:senha:ncheckins
-   Eu:00000000000:MinhaSenha123:0
-   OutroUsuario:12345678900:OutraSenha:0
+   Usuario1:00000000000:MinhaSenha123:0
+   Usuario2:11111111111:OutraSenha:0
    ```
    > **Nota:** O cabeçalho `nome:cpf:senha:ncheckins` na primeira linha é opcional.
 
