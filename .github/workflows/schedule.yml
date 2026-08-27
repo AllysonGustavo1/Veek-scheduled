@@ -2,9 +2,11 @@ name: Veek Scheduled Check-in
 
 on:
   schedule:
-    # Executa a cada 30 minutos (nos minutos :15 e :45 para evitar a fila de pico do GitHub no :00 e :30)
-    - cron: '15,45 * * * *'
-  workflow_dispatch: # Permite disparar manualmente pela aba Actions do GitHub
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   checkin:
